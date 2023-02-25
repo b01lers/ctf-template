@@ -7,11 +7,9 @@ FROM ubuntu:20.04
 # Install any software needed to
 # build the challenge
 
-RUN apt-get update
-RUN apt-get install -y xinetd
-RUN apt-get update
-RUN apt-get install -y build-essential
-RUN apt-get install -y gcc-multilib
+RUN apt-get update && apt-get install -y xinetd
+RUN apt-get update && apt-get install -y build-essential
+RUN apt-get update && apt-get install -y gcc-multilib
 
 # Change example to the name of your challenge.
 
